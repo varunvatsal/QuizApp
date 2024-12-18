@@ -46,7 +46,7 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
     "option3": "Mercury",
     "option4": "Venus",
     "answer": ""
- }
+  }
  *** id is important for submiting answer
 
 ### 3. Submit Answer(POST)
@@ -60,4 +60,17 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
     "id": 1,
     "answer": "C",
     "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJWQVJVTiIsImV4cCI6MTczNDYxMjAwM30.xSxZYLSfLWgjAqk5yLDFYv76ZVxR7GywDp6xk6reUGvdGw9TdsGQ7F-xD3XTw92StLGrNxFnzCTW49zqsifVpw"
-}
+  }
+  *** here id is value of id in the response of get Question endpoint
+
+### 4. Get Result (GET)
+- **URL:** `localhost:8080/getReport/{token}`
+- **Description:** Retrieves a summary report of the quiz session.
+- **Response Example:**
+  ```json
+  {
+    "username": "VARUN",
+    "correctAnswered": 1,
+    "wrongAnswered": 0,
+    "message": ""
+  }
