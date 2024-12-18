@@ -14,7 +14,7 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
 ---
 ## how to run on local
 - git clone git@github.com:varunvatsal/QuizApp.git
-- cd QuizDemo
+- cd QuizApp
 - mvn clean install
 - mvn spring-boot:run
 ---
