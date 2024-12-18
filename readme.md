@@ -32,3 +32,32 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
     "username": "VARUN",
     "password": "VARUN@123"
   }
+
+### 2. Get Question (GET)
+- **URL:** `localhost:8080/getQuestion/{token}`
+- **Description:** Fetches a single quiz question.
+- **Response Example:**
+  ```json
+  {
+    "id": 1,
+    "question": "Which is the smallest planet in our solar system?",
+    "option1": "Earth",
+    "option2": "Mars",
+    "option3": "Mercury",
+    "option4": "Venus",
+    "answer": ""
+ }
+ *** id is important for submiting answer
+
+### 3. Submit Answer(POST)
+- **URL:** `localhost:8080/submitQues`
+- **Description:** Submits the answer for a specific question.
+- **Response Example:**
+  ***Answer submitted
+- **Rquest Body:**
+  ```json
+  {
+    "id": 1,
+    "answer": "C",
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJWQVJVTiIsImV4cCI6MTczNDYxMjAwM30.xSxZYLSfLWgjAqk5yLDFYv76ZVxR7GywDp6xk6reUGvdGw9TdsGQ7F-xD3XTw92StLGrNxFnzCTW49zqsifVpw"
+}
