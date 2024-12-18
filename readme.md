@@ -12,6 +12,9 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
 - Access and debug stored data using the in-memory H2 database.
 
 ---
+## how to run on local
+--
+---
 
 ## API Endpoints
 
@@ -47,7 +50,7 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
     "option4": "Venus",
     "answer": ""
   }
- *** id is important for submiting answer
+- id is important for submiting answer
 
 ### 3. Submit Answer(POST)
 - **URL:** `localhost:8080/submitQues`
@@ -61,7 +64,8 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
     "answer": "C",
     "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJWQVJVTiIsImV4cCI6MTczNDYxMjAwM30.xSxZYLSfLWgjAqk5yLDFYv76ZVxR7GywDp6xk6reUGvdGw9TdsGQ7F-xD3XTw92StLGrNxFnzCTW49zqsifVpw"
   }
-  *** here id is value of id in the response of get Question endpoint
+
+- here id is value of id in the response of get Question endpoint
 
 ### 4. Get Result (GET)
 - **URL:** `localhost:8080/getReport/{token}`
@@ -74,3 +78,12 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
     "wrongAnswered": 0,
     "message": ""
   }
+
+---
+## how to check values in h2 database
+-- got to the link -> http://localhost:8080/h2-console/
+-- login using username = "sa" and password = ""
+-- run sql scripts to fetch data
+-- select * from report;
+-- select * from quiz;
+-- select * from quiz_user;
