@@ -55,8 +55,7 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
 ### 3. Submit Answer(POST)
 - **URL:** `localhost:8080/submitQues`
 - **Description:** Submits the answer for a specific question.
-- **Response Example:**
-  ***Answer submitted
+- **Response Example:** Answer submitted
 - **Rquest Body:**
   ```json
   {
@@ -81,9 +80,9 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
 
 ---
 ## how to check values in h2 database
--- got to the link -> http://localhost:8080/h2-console/
--- login using username = "sa" and password = ""
--- run sql scripts to fetch data
--- select * from report;
--- select * from quiz;
--- select * from quiz_user;
+- got to the link -> http://localhost:8080/h2-console/
+- login using username = "sa" and password = ""
+- run sql scripts to fetch data
+- select * from report;
+- select * from quiz;
+- select * from quiz_user;
