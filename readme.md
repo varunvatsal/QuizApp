@@ -13,7 +13,10 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
 
 ---
 ## how to run on local
---
+- git clone git@github.com:varunvatsal/QuizApp.git
+- cd QuizDemo
+- mvn clean install
+- mvn spring-boot:run
 ---
 
 ## API Endpoints
@@ -82,7 +85,7 @@ This is a simple Quiz Taking application built using **Spring Boot** and an **in
 ## how to check values in h2 database
 - got to the link -> http://localhost:8080/h2-console/
 - login using username = "sa" and password = ""
-- run sql scripts to fetch data
+- run following sql scripts to fetch data
 - select * from report;
 - select * from quiz;
 - select * from quiz_user;
